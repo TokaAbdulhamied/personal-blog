@@ -1,3 +1,5 @@
+@import "homeResposive.css";
+
 * {
     box-sizing: border-box;
 }
@@ -7,18 +9,36 @@ body {
     background-color: #24252a;
     color: blanchedalmond;
 }
-        /* navbar */
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header' 
+    'middle middle middle middle middle  middle' 
+    'footer footer footer footer footer footer';
+    grid-row-gap: 30px; 
+}
+.btn {
+    background-color: rgb(236, 180, 37);
+    color: #444;
+    border: 1px solid transparent;
+    padding: .5rem 1rem ;
+    border-radius: .25rem;
+    text-decoration: none;
+}
+    /* navbar */
 header {
+    grid-area: header;
     display: flex;
     justify-content: space-between;
     background-color: rgb(236, 180, 37);
     align-items: center;
     /* flex-direction: column; */
     padding: 0px 40px;
-    height: 7vh;
+    height: auto;
 }
 
-li a {
+ul li a {
     text-decoration: none;
     color: #444;
     font-size: 1.2em;
@@ -31,7 +51,13 @@ ul li {
     display: inline-block;
     padding: 0px 20px;
 }
-
+ul{
+    margin: 0;
+}
+.logo{
+    margin-top: -15px;
+    margin-bottom: -20px;
+}
 .logo .logo-text {
     color: #444;
     text-decoration: none;
@@ -44,24 +70,82 @@ li a:hover {
     background-color: rgb(219, 167, 36);
     transition: .5s;
 }
-/* media quary */
-@media only screen and (max-width: 760px){
-    header {
-        height: 30vh;
-        flex-direction: column;
-    }
-    header ul li {
-        display: block;
-        text-align: center;
-        background-color: rgb(236, 180, 37);
-        margin-bottom: 7px;
-    }
-    nav {
-        width: 100%;
-        margin-top: -25px;
-    }
-    li a {
-        padding: 10px;
-        /* adjast hover size */
-    } 
+/* content section  */
+.content{
+    grid-area: middle;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin: 0 10%;
+   
+}
+article {
+    /* grid-column-: 1 /span 4; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+   
+}
+
+article .post {
+    width: 95%;
+    margin: 20px auto;
+    height: 230px;
+    border-radius: 5px;
+    background: whitesmoke;
+    position: relative;
+}
+article .post .post-img {
+    width: 40%;
+    height: 100%;
+    float: left;
+
+}
+article .post .post-preview {
+    width: 60%;
+    float: right;
+    padding: 10px;
+}
+article .post .post-preview .post-title {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+article .post .post-preview .catigory {
+    display: inline-block;
+}
+article .post .post-preview .date {
+    display: inline-block;
+}
+article .post .post-preview .preview-text {
+   margin-top: -10px;
+   margin-bottom: 20px;
+    
+}
+.post-link {
+    color: black;
+    text-decoration: none;
+}
+.post-link:hover{
+    color:  rgb(236, 180, 37);
+}
+.read-more:hover {
+    background-color: rgb(219, 167, 36);
+    transition: .25s;
+}
+.read-more {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+aside {
+    /* grid-column: 5/ span 2; */
+    border: 3px whitesmoke solid;
+    
+}
+
+
+footer {
+    grid-area: footer;
+   
 }
