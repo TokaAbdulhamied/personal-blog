@@ -1,5 +1,5 @@
 @import "homeResposive.css";
-
+@import"content.css";
 * {
     box-sizing: border-box;
 }
@@ -38,7 +38,7 @@ header {
     height: auto;
 }
 
-ul li a {
+header ul li a {
     text-decoration: none;
     color: #444;
     font-size: 1.2em;
@@ -46,12 +46,12 @@ ul li a {
     padding: 15px;
 }
 
-ul li {
+header ul li {
     list-style: none;
     display: inline-block;
     padding: 0px 20px;
 }
-ul{
+header ul{
     margin: 0;
 }
 .logo{
@@ -66,84 +66,16 @@ ul{
     padding: 1px;   
 }
 
-li a:hover {
+header ul li a:hover {
     background-color: rgb(219, 167, 36);
     transition: .5s;
 }
-/* content section  */
-.content{
-    grid-area: middle;
-    display: grid;
-    grid-template-columns: 80% 20%;
-    margin: 0 10%;
-   
-}
-article {
-    /* grid-column-: 1 /span 4; */
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-   
-}
 
-article .post {
-    width: 95%;
-    margin: 20px auto;
-    height: 230px;
-    border-radius: 5px;
-    background: whitesmoke;
-    position: relative;
-}
-article .post .post-img {
-    width: 40%;
-    height: 100%;
-    float: left;
-
-}
-article .post .post-preview {
-    width: 60%;
-    float: right;
-    padding: 10px;
-}
-article .post .post-preview .post-title {
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-
-}
-
-article .post .post-preview .catigory {
-    display: inline-block;
-}
-article .post .post-preview .date {
-    display: inline-block;
-}
-article .post .post-preview .preview-text {
-   margin-top: -10px;
-   margin-bottom: 20px;
-    
-}
-.post-link {
-    color: black;
-    text-decoration: none;
-}
-.post-link:hover{
-    color:  rgb(236, 180, 37);
-}
-.read-more:hover {
-    background-color: rgb(219, 167, 36);
-    transition: .25s;
-}
-.read-more {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-aside {
-    /* grid-column: 5/ span 2; */
-    border: 3px whitesmoke solid;
-    
-}
-
+.title {
+    color: #ffffff;
+    margin-top: 4px;
+    margin-left: 20px;
+    font-size: 1.8em;
 
 footer {
     grid-area: footer;
