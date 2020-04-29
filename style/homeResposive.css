@@ -1,15 +1,6 @@
 /* media quary */
 @media only screen and (max-width: 760px){
-    .container {
-        display: grid;
-        grid-template-areas: 
-        'header header header header header header' 
-        'left left left left left left' 
-        'middle middle middle middle middle middle' 
-        'right right right right right right' 
-        'footer footer footer footer footer footer';
-        grid-row-gap: 10px; 
-    }
+
     header {
         display: flex;
         /* height: 30vh; */
@@ -17,15 +8,30 @@
         flex-direction: column;
         
     }
+
     header ul li {
         margin-bottom: 7px;
-    }   
+    }
+
     ul {
         margin-top: -20px; 
         display: flex;
         flex-direction: column;
     }
-    .logo{
+
+    .logo {
        margin: 0;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(250px, 750px) );
+        margin: 0 0;
+
+    }
+    
+    article .post {
+        width: 100%;
+
     }
 }

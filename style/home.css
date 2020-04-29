@@ -1,7 +1,7 @@
-@import "homeResposive.css";
+
 @import"content.css";
 @import"post.css";
-
+@import "homeResposive.css";
 * {
     box-sizing: border-box;
 }
