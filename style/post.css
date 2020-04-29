@@ -16,3 +16,35 @@
     margin-bottom: 30px;
     font-size: 1.8em;
 }
+
+.back-home {
+    margin-left: 300px ;
+}
+
+.post-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} 
+
+.footer-content {
+    border: 1px solid #e0e0e0;
+    color: #ffffff; 
+    padding: 20px 50px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.about {
+    width: 95%;
+}
+
+.links {
+    font-size: 1.5em;
+}
+
+.fa {
+    color: #3b5998  !important;
+}

@@ -27,11 +27,19 @@
         display: grid;
         grid-template-columns: repeat( auto-fit, minmax(250px, 750px) );
         margin: 0 0;
-
     }
-    
+
     article .post {
         width: 100%;
-
     }
+
+    .post-img {
+        width: 80%;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(250px, 750px) );
+    }
+
 }
